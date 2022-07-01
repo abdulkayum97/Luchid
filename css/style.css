@@ -1,0 +1,523 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-right: 20;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    color: #fff;
+    font-size: 50px;
+    margin: 30px 0;
+}
+
+h2 {
+    font-size: 36px;
+    color: #1a1a1a;
+    margin: 15px 0 30px 0;
+    font-weight: 600;
+}
+
+h3 {
+    color: #1a1a1a;
+    font-size: 24px;
+    padding: 10px 0;
+}
+
+h4 {
+    color: #008ed6;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+p {
+    color: #999999;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+.heading_bottom {
+    position: relative;
+    width: 50px;
+    margin: auto;
+}
+
+.heading_bottom span::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 47%;
+    height: 2px;
+    background-color: #008ed6;
+    display: block;
+}
+
+.heading_bottom span::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0px;
+    width: 47%;
+    height: 2px;
+    background-color: #008ed6;
+
+}
+
+header {
+    background: url(../images/hero-bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 80vh;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+    position: relative;
+    padding: 0;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0%;
+    height: 2px;
+    background-color: #008ed6;
+    transition: .4s all ease-in-out;
+    opacity: 0;
+}
+
+.navbar-light .navbar-nav .nav-link:hover::before {
+    opacity: 1;
+    width: 47%;
+}
+
+.navbar-light .navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    width: 0%;
+    height: 2px;
+    background-color: #008ed6;
+    transition: .4s all ease-in-out;
+    opacity: 0;
+}
+
+.navbar-light .navbar-nav .nav-link:hover::after {
+    opacity: 1;
+    width: 47%;
+}
+
+li.nav-item {
+    padding: 0 15px;
+}
+
+header {
+    position: relative;
+}
+
+.hero_content {
+    min-height: 70vh;
+    align-items: center;
+}
+
+.hero_content .btn-download {
+    background: #008ed6;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: white;
+    padding: 10px 20px;
+    border: 1px solid #008ed6;
+}
+
+.hero_content .btn-download:hover {
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+
+.hero_content .btn-features {
+    background: transparent;
+    border: 1px solid #999;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: white;
+    padding: 10px 20px;
+    margin-left: 20px;
+}
+
+.hero_content .btn-features:hover {
+    background-color: white;
+    color: #008ed6;
+}
+
+.phone {
+    position: absolute;
+    bottom: 0;
+    right: 15%;
+    align-items: center;
+}
+
+.product {
+    padding: 70px 0;
+    border-bottom: 1px solid #e0e0e0;
+
+}
+
+.product_item {}
+
+.product_item .icon {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #e0e0e0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #008ed6;
+    margin: auto;
+}
+
+.product_details {
+    margin: 70px 0;
+}
+
+.product_details .product_info {
+    padding-top: 80px;
+}
+
+.product_details .product_info ul {
+    list-style: none;
+}
+
+.product_details .product_info ul li {
+    padding: 5px 0;
+}
+
+.product_details .product_info .icon {
+    display: inline-block;
+    width: 20px;
+    color: #008ed6;
+}
+
+
+/* Super Easy */
+
+.supar_easy {
+    background-color: #F2F2F2;
+    padding: 70px 0;
+}
+
+.super_easy_content {
+    margin-top: 80px;
+}
+
+.super_easy_img {}
+
+.testimonial {
+    padding: 70px 0;
+    background: url(../images/testimonial-bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.testimonial .client {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.testimonial p {
+    color: #fff;
+    font-style: italic;
+}
+
+
+.testimonial .client .client_img {
+    width: 50px;
+    margin-right: 20px;
+}
+
+.testimonial .client .client_dec {
+    color: #fff;
+}
+
+.testimonial .client .client_dec h6 {
+    font-weight: 300;
+}
+
+.testimonial .client .client_dec h5 {
+    font-size: 16px;
+}
+
+
+
+.like_what {
+    background-color: #15141A;
+    padding: 70px 0;
+}
+
+.like_what h2 {
+    color: white;
+}
+
+.like_what h2 span {
+    font-weight: 200;
+}
+
+
+.like_what .btn-download {
+    background: #008ed6;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: white;
+    padding: 10px 20px;
+    border: 1px solid #008ed6;
+    margin-left: 20px;
+
+}
+
+.like_what .btn-download:hover {
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+
+.like_what .btn-features {
+    background: transparent;
+    border: 1px solid #999;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: white;
+    padding: 10px 20px;
+}
+
+.like_what .btn-features:hover {
+    background-color: white;
+    color: #008ed6;
+}
+
+.pricing {
+    padding: 70px 0;
+}
+
+.pricing_content {
+    border: 1px solid #e0e0e0;
+    text-align: center;
+}
+
+.pricing_content h3 {
+    padding: 20px 0;
+    font-weight: 700;
+    color: #000;
+    transition: .2s all ease-in-out;
+    text-transform: uppercase;
+}
+
+.pricing_content .price {
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    transition: .2s all ease-in-out;
+
+}
+
+.pricing_content .price h1 {
+    margin: 0;
+    color: #000;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 72px;
+    transition: .2s all ease-in-out;
+}
+
+.pricing_content .price h1 sup {
+    font-size: 37px;
+    font-weight: 400;
+}
+
+.pricing_content .price h6 {
+    margin-bottom: 20px;
+
+}
+
+.pricing_content .lower_content {
+    margin: 30px 40px;
+}
+
+.pricing_content .lower_content span {
+    color: #008ed6;
+}
+
+.pricing_content .order_btn {
+    border: 1px solid #e0e0e0;
+    color: #008ed6;
+    margin-top: 40px;
+    padding: 10px 30px;
+    font-weight: 600;
+    transition: .2s all ease-in-out;
+}
+
+
+.pricing_content:hover h3 {
+    color: #008ed6;
+}
+
+.pricing_content:hover .price {
+    background-color: #008ed6;
+    color: #fff !important;
+}
+
+.pricing_content:hover h1 {
+    color: #fff;
+}
+
+.pricing_content:hover .order_btn {
+    background-color: #008ed6;
+    color: #fff;
+    border: 1px solid #008ed6;
+}
+
+.contact {
+    background-color: #EDEDED;
+    padding: 70px 0;
+    position: relative;
+    padding-bottom: 320px;
+}
+
+.contact .contact_info {}
+
+.contact .contact_info i {
+    color: #008ed6;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.contact .contact_info p {}
+
+.contact .form {
+    background: black;
+    padding: 70px;
+    text-align: end;
+    position: absolute;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 800px;
+}
+
+.contact form {}
+
+.contact form input {
+    background: transparent;
+    border: 1px solid #444348;
+    color: #444348;
+}
+
+.contact form textarea {
+    background: transparent;
+    border: 1px solid #444348;
+    color: #444348;
+
+
+}
+
+.contact form input[type="submit"] {
+    background: #008ed6;
+    padding: 10px 30px;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.map iframe {
+    display: block;
+}
+
+footer {
+    background: #15141A;
+    text-align: center;
+    padding: 50px 0;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+footer ul li {
+    padding: 0 10px;
+}
+
+footer ul li a {
+    color: #444348;
+    font-size: 18px;
+}
+
+footer ul li a:hover {
+    color: #008ed6;
+}
+
+
+footer p {
+    color: #444348;
+    text-transform: uppercase;
+    padding-top: 10px;
+}
+
+
+/* Owl Carousel */
+.owl-nav {
+    display: none;
+}
+
+.owl-dots .owl-dot span {
+    display: block;
+    width: 8px;
+    height: 8px;
+    background-color: transparent;
+    border: 1px solid #e0e0e0;
+    border-radius: 50px;
+}
+
+.owl-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.owl-dots .owl-dot {
+    margin: 5px;
+}
+
+.owl-dots .active span {
+    background-color: #fff;
+    width: 10px;
+    height: 10px;
+}
